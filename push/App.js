@@ -59,6 +59,14 @@ const App: () => Node = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+//   useEffect(() => {
+//     const unsubscribe = messaging().onMessage(async remoteMessage => {
+//       Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+//     });
+
+//     return unsubscribe;
+//   }, []);
+// }
 
   return (
     <SafeAreaView style={backgroundStyle}>
